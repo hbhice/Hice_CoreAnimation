@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D452CF319D41565000469AF /* TwoDBallLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D452CF219D41565000469AF /* TwoDBallLayer.m */; };
+		6D452CF619D43A06000469AF /* BCurveLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D452CF519D43A06000469AF /* BCurveLayer.m */; };
 		6D8A99C019D406FC0027F5CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8A99BF19D406FC0027F5CA /* main.m */; };
 		6D8A99C319D406FC0027F5CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8A99C219D406FC0027F5CA /* AppDelegate.m */; };
 		6D8A99C619D406FC0027F5CA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8A99C519D406FC0027F5CA /* ViewController.m */; };
@@ -27,6 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6D452CF119D41565000469AF /* TwoDBallLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoDBallLayer.h; sourceTree = "<group>"; };
+		6D452CF219D41565000469AF /* TwoDBallLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoDBallLayer.m; sourceTree = "<group>"; };
+		6D452CF419D43A06000469AF /* BCurveLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCurveLayer.h; sourceTree = "<group>"; };
+		6D452CF519D43A06000469AF /* BCurveLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCurveLayer.m; sourceTree = "<group>"; };
 		6D8A99BA19D406FC0027F5CA /* 3DFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 3DFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D8A99BE19D406FC0027F5CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D8A99BF19D406FC0027F5CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -81,6 +87,7 @@
 		6D8A99BC19D406FC0027F5CA /* 3DFun */ = {
 			isa = PBXGroup;
 			children = (
+				6D8A99E319D40A330027F5CA /* Layers */,
 				6D8A99C119D406FC0027F5CA /* AppDelegate.h */,
 				6D8A99C219D406FC0027F5CA /* AppDelegate.m */,
 				6D8A99C419D406FC0027F5CA /* ViewController.h */,
@@ -117,6 +124,17 @@
 				6D8A99D819D406FC0027F5CA /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6D8A99E319D40A330027F5CA /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				6D452CF119D41565000469AF /* TwoDBallLayer.h */,
+				6D452CF219D41565000469AF /* TwoDBallLayer.m */,
+				6D452CF419D43A06000469AF /* BCurveLayer.h */,
+				6D452CF519D43A06000469AF /* BCurveLayer.m */,
+			);
+			name = Layers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,7 +237,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D452CF319D41565000469AF /* TwoDBallLayer.m in Sources */,
 				6D8A99C619D406FC0027F5CA /* ViewController.m in Sources */,
+				6D452CF619D43A06000469AF /* BCurveLayer.m in Sources */,
 				6D8A99C319D406FC0027F5CA /* AppDelegate.m in Sources */,
 				6D8A99C019D406FC0027F5CA /* main.m in Sources */,
 			);
@@ -346,6 +366,7 @@
 				INFOPLIST_FILE = 3DFun/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -356,6 +377,7 @@
 				INFOPLIST_FILE = 3DFun/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -412,6 +434,7 @@
 				6D8A99DF19D406FC0027F5CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6D8A99E019D406FC0027F5CA /* Build configuration list for PBXNativeTarget "3DFunTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +443,7 @@
 				6D8A99E219D406FC0027F5CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
