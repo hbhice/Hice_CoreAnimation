@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DC0025019D97A1B0031B658 /* CardioidBezierCurve.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC0024F19D97A1B0031B658 /* CardioidBezierCurve.m */; };
 		6D452CF319D41565000469AF /* TwoDBallLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D452CF219D41565000469AF /* TwoDBallLayer.m */; };
 		6D452CF619D43A06000469AF /* BCurveLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D452CF519D43A06000469AF /* BCurveLayer.m */; };
 		6D8A99C019D406FC0027F5CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8A99BF19D406FC0027F5CA /* main.m */; };
@@ -29,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0DC0024E19D97A1B0031B658 /* CardioidBezierCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardioidBezierCurve.h; sourceTree = "<group>"; };
+		0DC0024F19D97A1B0031B658 /* CardioidBezierCurve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardioidBezierCurve.m; sourceTree = "<group>"; };
 		6D452CF119D41565000469AF /* TwoDBallLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoDBallLayer.h; sourceTree = "<group>"; };
 		6D452CF219D41565000469AF /* TwoDBallLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoDBallLayer.m; sourceTree = "<group>"; };
 		6D452CF419D43A06000469AF /* BCurveLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCurveLayer.h; sourceTree = "<group>"; };
@@ -96,6 +99,8 @@
 				6D8A99CA19D406FC0027F5CA /* Images.xcassets */,
 				6D8A99CC19D406FC0027F5CA /* LaunchScreen.xib */,
 				6D8A99BD19D406FC0027F5CA /* Supporting Files */,
+				0DC0024E19D97A1B0031B658 /* CardioidBezierCurve.h */,
+				0DC0024F19D97A1B0031B658 /* CardioidBezierCurve.m */,
 			);
 			path = 3DFun;
 			sourceTree = "<group>";
@@ -242,6 +247,7 @@
 				6D452CF619D43A06000469AF /* BCurveLayer.m in Sources */,
 				6D8A99C319D406FC0027F5CA /* AppDelegate.m in Sources */,
 				6D8A99C019D406FC0027F5CA /* main.m in Sources */,
+				0DC0025019D97A1B0031B658 /* CardioidBezierCurve.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +370,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = 3DFun/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 2;
@@ -375,6 +382,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = 3DFun/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 2;
@@ -394,6 +402,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = 3DFunTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/3DFun.app/3DFun";
@@ -409,6 +418,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = 3DFunTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/3DFun.app/3DFun";

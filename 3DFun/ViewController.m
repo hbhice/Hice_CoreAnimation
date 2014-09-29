@@ -11,6 +11,7 @@
 #import "ViewController.h"
 #import "TwoDBallLayer.h"
 #import "BCurveLayer.h"
+#import "CardioidBezierCurve.h"
 
 @interface ViewController ()
 
@@ -74,12 +75,16 @@
 - (CGMutablePathRef)createBasicCurvePath
 {
     // get the path for animation
-    CGMutablePathRef thePath = CGPathCreateMutable();
+    /*CGMutablePathRef thePath = CGPathCreateMutable();
     CGPathMoveToPoint(thePath, NULL, 100, 100);
     CGPathAddCurveToPoint(thePath, NULL, 100, 500, 320, 500, 320, 100);
     CGPathAddCurveToPoint(thePath, NULL, 320, 500, 566, 500, 566, 100);
+    return thePath;*/
     
-    return thePath;
+    CardioidBezierCurve* bCurve = [[CardioidBezierCurve alloc] init];
+    return [bCurve getBezierPath];
+    
+
 }
 
 - (CGMutablePathRef)createLinePath
